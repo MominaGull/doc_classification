@@ -126,7 +126,7 @@ def prediction(input_file):
                     unsafe_allow_html=True)
 
 streamlit_config()
-    
+nltk.download('punkt')    
 
 # File Uploader
 input_file = st.file_uploader('Upload an HTML file', type='html')
