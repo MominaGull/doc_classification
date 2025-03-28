@@ -2,6 +2,7 @@ import numpy as np
 import spacy
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 import tensorflow as tf
 import streamlit as st
 from streamlit_extras.add_vertical_space import add_vertical_space
