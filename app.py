@@ -1,6 +1,7 @@
 import numpy as np
 import spacy
 import nltk
+nltk.download('punkt')
 import tensorflow as tf
 import streamlit as st
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -126,7 +127,6 @@ def prediction(input_file):
                     unsafe_allow_html=True)
 
 streamlit_config()
-nltk.download('punkt')    
 
 # File Uploader
 input_file = st.file_uploader('Upload an HTML file', type='html')
